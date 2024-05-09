@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="well">
+
+    <h1 class="heading">JS Calculator</h1>
+  
+    <form role="form" class="row" id="calculator">
+  
+      <!--Calculator's display-->
+      <input type="text" class="form-control" id="display" disabled>
+  
+      <!--Buttons-->
+      <!--First Row-->
+      <div class="row">
+        <input type="button" value="CA" class="btn btn-lg materialRed200" onclick="addtoscreen('ca')">
+  
+        <input type="button" value="X" class="btn btn-lg materialRed200" onclick="backspace()">
+  
+        <input type="button" value="x²" class="btn btn-lg materialGrey400" onclick="power(2)">
+  
+        <input type="button" value="√" id="divided" class="btn btn-lg materialGrey400" onclick="power(0.5)">
+      </div>
+  
+      <!--Second Row-->
+      <div class="row">
+        <input type="button" value="7" class="btn btn-lg" onclick="addtoscreen('7')">
+  
+        <input type="button" value="8" class="btn btn-lg" onclick="addtoscreen('8')">
+  
+        <input type="button" value="9" class="btn btn-lg" onclick="addtoscreen('9')">
+  
+        <input type="button" value="/" id="equals" class="btn btn-lg materialGrey400" onclick="addtoscreen('/')">
+      </div>
+  
+      <!--Third Row-->
+      <div class="row">
+        <input type="button" value="4" class="btn btn-lg" onclick="addtoscreen('4')">
+  
+        <input type="button" value="5" class="btn btn-lg" onclick="addtoscreen('5')">
+  
+        <input type="button" value="6" class="btn btn-lg" onclick="addtoscreen('6')">
+  
+        <input type="button" value="*" class="btn btn-lg materialGrey400" onclick="addtoscreen('*')">
+      </div>
+  
+      <!--Fourth Row-->
+      <div class="row">
+        <input type="button" value="1" class="btn btn-lg" onclick="addtoscreen('1')">
+  
+        <input type="button" value="2" class="btn btn-lg" onclick="addtoscreen('2')">
+  
+        <input type="button" value="3" class="btn btn-lg" onclick="addtoscreen('3')">
+  
+        <input type="button" value="-" class="btn btn-lg materialGrey400" onclick="addtoscreen('-')">
+      </div>
+  
+      <!--Last Row-->
+      <div class="row">
+        <input type="button" value="." class="btn btn-lg" onclick="addtoscreen('.')">
+  
+        <input type="button" value="0" class="btn btn-lg" onclick="addtoscreen('0')">
+  
+        <input type="button" value="=" class="btn btn-lg" id="equals" onclick="answer()">
+  
+        <input type="button" value="+" class="btn btn-lg materialGrey400" onclick="addtoscreen('+')">
+      </div>
+      <!--End Buttons-->
+  
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
